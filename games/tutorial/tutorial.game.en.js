@@ -24,6 +24,32 @@ undum.game.version = "1.0";
         continue...</a></p>"
  */
 
+<<<<<<< HEAD
+var pre_vid_text = "<video width='500' autoplay='true' class='transient' controls>\
+        <source src='games/media/video/";
+var post_vid_text = "' type='video/mp4'>\
+        Your browser does not support the video tag.</video>\
+        \
+        <p class='transient'><ol type='a'>\
+            ";
+var pre_option_text = "<li class='transient'><a href='";
+var post_option_text = "</a></li>\
+            ";
+
+var sits = undum.game.situations;
+
+for (var i = 0; i < treeData.length; i++){
+    var sit_text = pre_vid_text + treeData[i].video + post_vid_text;
+    for(var j = 0; j < treeData[i].text.length; j++){
+        sit_text = sit_text + pre_option_text + treeData[i].text[j].child + "'>" + treeData[i].text[j].option + post_option_text;
+    }
+    if(treeData[i].parent != "none"){
+        sit_text = sit_text + pre_option_text + treeData[i].parent + "'> Back" + post_option_text;
+    }
+    sit_text = sit_text + "</p>";
+
+    sits[treeData[i].node] = new undum.SimpleSituation(sit_text);
+=======
 
 
 //
@@ -72,7 +98,9 @@ undum.game.situations = {
 			<li class='transient'><a href='path003v002'>back</a></li>\
 		</p>"
     )
+>>>>>>> origin/master
 };
+
 
 // ---------------------------------------------------------------------------
 /* The Id of the starting situation. */
