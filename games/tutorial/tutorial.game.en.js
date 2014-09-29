@@ -16,7 +16,6 @@ undum.game.id = "be1c95b9-cbc7-48c6-8e6a-89837aa9113e";
 undum.game.version = "1.0";
 
 /* The situations that the game can be in. Each has a unique ID.
-
 <a href='path003v002'>a) Say \"They\'ll spend hours trying to figure\
 		 this out\. We\'ve got to tell them\.\"</a></p>\
         <p class='transient'>Click <a href='path003v002'>this link to\
@@ -24,51 +23,54 @@ undum.game.version = "1.0";
         <p class='transient'>Click <a href='path003v002'>this link to\
         continue...</a></p>"
  */
+
+
+
+//
+// function jsonTo {
+//
+// 	var s = "<video width='500' autoplay='true' class='transient' controls>\
+//         <source src='games/media/video/p001v001.mp4' type='video/mp4'>\
+//         Your browser does not support the video tag.</video>\
+// 		\
+//         <p class='transient'><ol type='a'>\
+// 			<li class='transient'><a href='path003v002'>Say \"They\'ll spend hours trying to figure\
+// 		 	this out\. We\'ve got to tell them\.\"</a></li>\
+// 			<li class='transient'><a href='path003v002'>Say \"What\'s wrong with going to ground\?\"</a></li>\
+// 			<li class='transient'><a href='path003v002'>Say \"OK \, but you\'re putting me in a bad\
+// 			position\.\"</a></li>\
+// 		</p>";
+// }
+
+
 undum.game.situations = {
     start: new undum.SimpleSituation(
         "<video width='500' autoplay='true' class='transient' controls>\
         <source src='games/media/video/p001v001.mp4' type='video/mp4'>\
         Your browser does not support the video tag.</video>\
 		\
-        <p class='transient'><ol type='a'>\
+        <p class='transient'>\
 			<li class='transient'><a href='path003v002'>Say \"They\'ll spend hours trying to figure\
 		 	this out\. We\'ve got to tell them\.\"</a></li>\
 			<li class='transient'><a href='path003v002'>Say \"What\'s wrong with going to ground\?\"</a></li>\
 			<li class='transient'><a href='path003v002'>Say \"OK \, but you\'re putting me in a bad\
 			position\.\"</a></li>\
+			<li class='transient'><a href='path003v002'>back</a></li>\
 		</p>"
     ),
     path003v002: new undum.SimpleSituation(
         "<video width='500' autoplay='true' class='transient' controls>\
-        <source src='games/media/video/p003v002.mp4' type='video/mp4'>\
+        <source src='games/media/video/p001v001.mp4' type='video/mp4'>\
         Your browser does not support the video tag.</video>\
 		\
-        <p class='transient'><ol type='a'>\
-			<li class='transient'><a href='path003v003'>Do nothing\.</a></li>\
-			<li class='transient'><a href='path003v003'>Say \"Chuck, we need\
-			to talk about this\.\"</a></li>\
-			<li class='transient'><a href='path003v003'>Say \"Chuck, you\'ve got to \
-			tell ground now\.\"</a></li>\
+        <p class='transient'>\
+			<li class='transient'><a href='path003v002'>Say \"They\'ll spend hours trying to figure\
+		 	this out\. We\'ve got to tell them\.\"</a></li>\
+			<li class='transient'><a href='path003v002'>Say \"What\'s wrong with going to ground\?\"</a></li>\
+			<li class='transient'><a href='path003v002'>Say \"OK \, but you\'re putting me in a bad\
+			position\.\"</a></li>\
+			<li class='transient'><a href='path003v002'>back</a></li>\
 		</p>"
-    ),
-    path003v003: new undum.SimpleSituation(
-        "<video width='500' autoplay='true' class='transient' controls>\
-        <source src='games/media/video/p003v003.mp4' type='video/mp4'>\
-        Your browser does not support the video tag.</video>\
-		\
-        <p class='transient'><ol type='a'>\
-			<li class='transient'><a href='path003v004'>Say \"Negative, I did not notice anything\
-			before it went down\.\"</a></li>\
-			<li class='transient'><a href='path003v004'>Say \"Actually, FE2 did have a cable mix-up.\"</a></li>\
-			<li class='transient'><a href='path003v004'>Say \"We\'re retracing our steps\
-			right now. We\'ll get back to you in a few minutes.\"</a></li>\
-		</p>"
-    ),
-    path003v004: new undum.SimpleSituation(
-        "<video width='500' autoplay='true' class='transient' controls>\
-        <source src='games/media/video/p003v004.mp4' type='video/mp4'>\
-        Your browser does not support the video tag.</video>\
-		"
     )
 };
 
