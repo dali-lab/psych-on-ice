@@ -24,7 +24,6 @@ undum.game.version = "1.0";
         continue...</a></p>"
  */
 
-<<<<<<< HEAD
 var pre_vid_text = "<video width='500' autoplay='true' class='transient' controls>\
         <source src='games/media/video/";
 var post_vid_text = "' type='video/mp4'>\
