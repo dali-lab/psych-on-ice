@@ -96,7 +96,6 @@ undum.game.situations = {
 			<li class='transient'><a href='path003v002'>back</a></li>\
 		</p>"
     )
->>>>>>> origin/master
 };
 
 
