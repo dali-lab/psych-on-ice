@@ -48,7 +48,6 @@ for (var i = 0; i < treeData.length; i++){
     sit_text = sit_text + "</p>";
 
     sits[treeData[i].node] = new undum.SimpleSituation(sit_text);
-=======
 
 
 //
