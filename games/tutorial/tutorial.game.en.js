@@ -48,6 +48,7 @@ for (var i = 0; i < treeData.length; i++){
     sit_text = sit_text + "</p>";
 
     sits[treeData[i].node] = new undum.SimpleSituation(sit_text);
+    
 }
 
 //
@@ -67,36 +68,36 @@ for (var i = 0; i < treeData.length; i++){
 // }
 
 
-undum.game.situations = {
-    start: new undum.SimpleSituation(
-        "<video width='500' autoplay='true' class='transient' controls>\
-        <source src='games/media/video/p001v001.mp4' type='video/mp4'>\
-        Your browser does not support the video tag.</video>\
-		\
-        <p class='transient'>\
-			<li class='transient'><a href='path003v002'>Say \"They\'ll spend hours trying to figure\
-		 	this out\. We\'ve got to tell them\.\"</a></li>\
-			<li class='transient'><a href='path003v002'>Say \"What\'s wrong with going to ground\?\"</a></li>\
-			<li class='transient'><a href='path003v002'>Say \"OK \, but you\'re putting me in a bad\
-			position\.\"</a></li>\
-			<li class='transient'><a href='path003v002'>back</a></li>\
-		</p>"
-    ),
-    path003v002: new undum.SimpleSituation(
-        "<video width='500' autoplay='true' class='transient' controls>\
-        <source src='games/media/video/p001v001.mp4' type='video/mp4'>\
-        Your browser does not support the video tag.</video>\
-		\
-        <p class='transient'>\
-			<li class='transient'><a href='path003v002'>Say \"They\'ll spend hours trying to figure\
-		 	this out\. We\'ve got to tell them\.\"</a></li>\
-			<li class='transient'><a href='path003v002'>Say \"What\'s wrong with going to ground\?\"</a></li>\
-			<li class='transient'><a href='path003v002'>Say \"OK \, but you\'re putting me in a bad\
-			position\.\"</a></li>\
-			<li class='transient'><a href='path003v002'>back</a></li>\
-		</p>"
-    )
-};
+// undum.game.situations = {
+//     start: new undum.SimpleSituation(
+//         "<video width='500' autoplay='true' class='transient' controls>\
+//         <source src='games/media/video/p001v001.mp4' type='video/mp4'>\
+//         Your browser does not support the video tag.</video>\
+// 		\
+//         <p class='transient'>\
+// 			<li class='transient'><a href='path003v002'>Say \"They\'ll spend hours trying to figure\
+// 		 	this out\. We\'ve got to tell them\.\"</a></li>\
+// 			<li class='transient'><a href='path003v002'>Say \"What\'s wrong with going to ground\?\"</a></li>\
+// 			<li class='transient'><a href='path003v002'>Say \"OK \, but you\'re putting me in a bad\
+// 			position\.\"</a></li>\
+// 			<li class='transient'><a href='path003v002'>back</a></li>\
+// 		</p>"
+//     ),
+//     path003v002: new undum.SimpleSituation(
+//         "<video width='500' autoplay='true' class='transient' controls>\
+//         <source src='games/media/video/p001v001.mp4' type='video/mp4'>\
+//         Your browser does not support the video tag.</video>\
+// 		\
+//         <p class='transient'>\
+// 			<li class='transient'><a href='path003v002'>Say \"They\'ll spend hours trying to figure\
+// 		 	this out\. We\'ve got to tell them\.\"</a></li>\
+// 			<li class='transient'><a href='path003v002'>Say \"What\'s wrong with going to ground\?\"</a></li>\
+// 			<li class='transient'><a href='path003v002'>Say \"OK \, but you\'re putting me in a bad\
+// 			position\.\"</a></li>\
+// 			<li class='transient'><a href='path003v002'>back</a></li>\
+// 		</p>"
+//     )
+// };
 
 
 // ---------------------------------------------------------------------------
